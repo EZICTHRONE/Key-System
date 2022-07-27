@@ -1,0 +1,37 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true, IntroText = "Key System (by Nice Cheats)" ConfigFolder = "OrionTest"})
+
+
+local KeyTab = Window:MakeTab({
+	Name = "Key",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+KeyTab:AddLabel("Get Key - https://pastebin.com/P4SZ0YV5")
+
+KeyTab:AddTextbox({
+	Name = "KeySpace",
+	Default = "Paste key here",
+	TextDisappear = true,
+	Callback = function()
+		if KeySpace == "YBNRTH" then
+		    OrionLib:MakeNotification({
+            	Name = "Correct key!",
+            	Content = "Loading HUB...",
+             	Image = "rbxassetid://4483345998",
+            	Time = 5
+           })
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/EZICTHRONE/Nice-Cheats-HUB/main/Lua",true))()
+            OrionLib:Destroy()
+        else
+            OrionLib:MakeNotification({
+            	Name = "Incorrect key!",
+            	Content = "Try again...",
+            	Image = "rbxassetid://4483345998",
+            	Time = 5
+            })
+	end	  
+})
+
+OrionLib:Init()
