@@ -30,7 +30,7 @@ KeyTab:AddButton({
              	Image = "rbxassetid://4483345998",
             	Time = 5
            })
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/EZICTHRONE/Nice-Cheats-HUB/main/Lua",true))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/EZICTHRONE/Nice-Cheats-HUB-wth-key/main/Script?token=GHSAT0AAAAAABW5RLQDLVHLAJZXTMDH6ERCYXBA2GQ",true))()
             OrionLib:Destroy()
         else
             OrionLib:MakeNotification({
