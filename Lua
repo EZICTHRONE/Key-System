@@ -23,7 +23,7 @@ KeyTab:AddTextbox({
 KeyTab:AddButton({
 	Name = "Check key",
 	Callback = function()
-        if KeySpace == "YBNRTH" then
+        if KeySpace == YBNRTH then
 		    OrionLib:MakeNotification({
             	Name = "Correct key!",
             	Content = "Loading HUB...",
