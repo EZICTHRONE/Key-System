@@ -14,8 +14,16 @@ KeyTab:AddTextbox({
 	Name = "KeySpace",
 	Default = "Paste key here",
 	TextDisappear = true,
+	Callback = function(Value)
+        print(Value)
+    end
+		 
+})
+
+KeyTab:AddButton({
+	Name = "Check key",
 	Callback = function()
-		if KeySpace == "YBNRTH" then
+        if KeySpace == "YBNRTH" then
 		    OrionLib:MakeNotification({
             	Name = "Correct key!",
             	Content = "Loading HUB...",
@@ -31,7 +39,8 @@ KeyTab:AddTextbox({
             	Image = "rbxassetid://4483345998",
             	Time = 5
             })
-	end	  
+	    end	 	
+  	end    
 })
 
 OrionLib:Init()
