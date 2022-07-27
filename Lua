@@ -13,7 +13,7 @@ KeyTab:AddLabel("Get Key - https://pastebin.com/P4SZ0YV5")
 KeyTab:AddTextbox({
 	Name = "KeySpace",
 	Default = "Paste key here",
-	TextDisappear = true,
+	TextDisappear = false,
 	Callback = function(Value)
         print(Value)
     end
